@@ -9,6 +9,10 @@ let userWord=""
 //otteniamo la parola inserita dall'utente
 buttonElement.addEventListener("click", function(){
     userWord=wordElement.value;
+    const wordReverse= reverseWord(userWord)
+
+console.log(wordReverse);
+
     wordElement.value="";
     // console.log(userWord)
 })
@@ -27,6 +31,3 @@ function reverseWord (word){
 }
 
 //usiamo la parola dell'utente nella nostra funzione.
-const wordReverse= reverseWord(userWord)
-
-console.log(wordReverse);
