@@ -11,6 +11,30 @@
     <title>Pari&Dispari</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center m-5">
+                <h1 class="m-5">SEGLI SE ...</h1>
+                <div class="form-floating">
+            <select class="form-select" id="select" aria-label="Floating label select example" >
+            <option   ></option>
+            <option id="pari" value="1">PARI</option>
+            <option id="dispari" value="2">DISPARI</option>
+                    </select>
+            <h1 class="m-5">ADESSO...</h1>
+                    <div class="mb-3">
+                        <label for="number" class="form-label h3 text-info">SCEGLI UN NUMERO DA 1 A 5</label>
+                        <input type="number"   class="form-control" min=1 max=5 id="number" >
+                        <button id="button" class="btn btn-info text-white m-3" >YOUR CHOICE</button>
+                    </div>
+                    <span id="userresult"></span>
+                    <span id="pcresult"></span>
+                    <span id="total"></span>
+                    <h2 id="winner" ></h2>
+
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
