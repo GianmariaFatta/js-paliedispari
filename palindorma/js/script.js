@@ -6,16 +6,26 @@ const buttonElement=document.getElementById("button");
 const wordElement=document.getElementById("word")
 
 let userWord=""
+let wordReverse=""
 //otteniamo la parola inserita dall'utente
 buttonElement.addEventListener("click", function(){
     userWord=wordElement.value;
     const wordReverse= reverseWord(userWord)
+    
+    console.log(wordReverse);
+    console.log(wordElement.value);
+    
+    if(wordElement.value===wordReverse){
+        resultElement.innerHTML=`<p id="result" class="h3 text-success text-center"> this is a palindrome word</p>`
+    }else{
+        resultElement.innerHTML=`<p id="result" class="h3 text-danger text-center"> this is not a palindrome word</p>`
+    }
 
-console.log(wordReverse);
-
+    
     wordElement.value="";
-    // console.log(userWord)
-})
+}) 
+
+
 
 
 //creiamo la funzione per invertire l'ordine della parola data
